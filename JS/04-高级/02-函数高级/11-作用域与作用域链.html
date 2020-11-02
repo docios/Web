@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script type="text/javascript">
+    // var a = 10
+    // b = 20
+    //
+    // function fn(x) {
+    //   var a = 100
+    //   c = 300
+    //   console.log("fn()", a, b, c, x) //100,20,300,10
+    //
+    //   function bar(x) {
+    //     var a = 1000
+    //     d = 400
+    //     console.log("bar()", a, b, c, x)//1000,20,300,100    //1000,20,300,200
+    //   }
+    //   bar(100)
+    //   bar(200)
+    // }
+    // fn(10)
+
+    /**
+     * 1
+     * @type {number}
+     */
+    var x = 10
+
+    function fn() {
+      console.log("-----------", x)
+    }
+
+    function show(f) {
+      var x = 20
+      f()
+    }
+
+    show(fn)
+    /**
+     * 2
+     */
+    var fn1 = function () {
+      console.log(fn1)
+    }
+    fn1()
+    var obj = {
+      fn2: function () {
+        console.log(fn2)
+      }
+    }
+    obj.fn2()
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

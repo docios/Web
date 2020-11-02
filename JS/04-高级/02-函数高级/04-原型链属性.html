@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<script type="text/javascript">
+		function Fn(){
+
+		}
+    Fn.prototype.a="xxx"
+		var fn1=new Fn()
+    console.log("fn1:"+fn1.a)//xxx
+    var fn2=new Fn()
+    fn2.a="yyy"
+    console.log(fn1)//yyy
+    console.log(fn2)//yyy
+	</script>
+</head>
+<body>
+
+</body>
+</html>

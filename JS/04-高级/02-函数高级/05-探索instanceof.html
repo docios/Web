@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script type="text/javascript">
+    /**
+		 * 案例一
+     * @constructor
+     */
+		function Fn(){}
+		var fn1=new Fn()
+
+    console.log(fn1 instanceof Fn)
+    console.log(fn1 instanceof Object)
+
+    /**
+		 * 案例二
+     */
+
+    console.log(Object instanceof Function)//true
+    console.log(Object instanceof Object)//true
+    console.log(Function instanceof Function)//true
+    console.log(Function instanceof Object)//true
+
+
+		function Foo(){
+
+		}
+    console.log(Object instanceof Foo)//false
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

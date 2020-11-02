@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function viewById(viewId, callBackFun) {
+            document.getElementById(viewId).onclick = callBackFun;
+        }
+
+        window.onload = function() {
+            viewById("btn1", function() {
+                // 创建一个JitPack节点,添加到# study下
+                var li = document.createElement("li");
+                li.innerHTML = "JitPack"
+
+                // var JitPack = document.createTextNode("JitPack");
+                // li.appendChild(JitPack);
+                var study = document.getElementById("study");
+                study.appendChild(li);
+            });
+
+            viewById("btn2", function() {
+                //将JitPack节点, 添加到# F前面
+                var li = document.createElement("li");
+                var JitPack = document.createTextNode("JitPack");
+                li.appendChild(JitPack);
+                var study = document.getElementById("study");
+                var F = document.getElementById("F");
+                study.insertBefore(li, F);
+
+            });
+
+            viewById("btn3", function() {
+                //将JitPack节点替换#F前面
+                var li = document.createElement("li");
+                var JitPack = document.createTextNode("JitPack");
+                li.appendChild(JitPack);
+                var study = document.getElementById("study");
+                var F = document.getElementById("F");
+                study.replaceChild(li, F);
+
+            });
+
+            viewById("btn4", function() {
+                // document.documentElement //html
+                // document.querySelector
+                //删除#F节点
+                //  var study = document.getElementById("study");
+                var F = document.getElementById("F");
+
+                F.parentNode.removeChild(F);
+                // study.removeChild(F);
+            });
+
+            viewById("btn5", function() {
+                //读取#study内的HTML代码
+                var study = document.getElementById("study");
+
+                alert(study.innerHTML);
+            });
+
+
+            viewById("btn6", function() {
+                //读取#study内的HTML代码
+                var F = document.getElementById("F");
+
+                F.innerHTML = "大数据";
+            });
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="total">
+        <div class="inner">
+            <p>你最近想要学习什么东西?</p>
+            <ul id="study">
+                <li id="F">Flutter</li>
+                <li>WEB</li>
+                <li>小程序</li>
+                <li>NodeJs</li>
+            </ul>
+        </div>
+
+
+        <div id="btnList">
+            <div><button id="btn1">创建一个JitPack节点,添加到#study下</button></div>
+            <div><button id="btn2">将JitPack节点,添加到#F前面</button></div>
+            <div><button id="btn3">将JitPack节点替换#F前面</button></div>
+            <div><button id="btn4">删除#F节点</button></div>
+            <div><button id="btn5">读取#study内的HTML代码</button></div>
+            <div><button id="btn6">设置#F内的HTML代码</button></div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

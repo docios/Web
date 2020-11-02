@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+        
+        #box {
+            margin: 20px auto;
+        }
+        
+        .btn {
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function findById(viewId, callBackFun) {
+            var byId = document.getElementById(viewId);
+            byId.onclick = callBackFun;
+        }
+
+
+        window.onload = function() {
+
+            var up = document.getElementById("up") //上一张
+            var down = document.getElementById("down") // 下一张
+            var box = document.getElementById("box") // 图片
+
+            var imgList = [
+                "../img/banner_0.jpg",
+                "../img/banner_1.jpg",
+                "../img/banner_2.jpg",
+                "../img/banner_3.jpg",
+            ];
+            var index = 0;
+            box.src = imgList[index];
+            down.getElementsByTagName;
+            down.childNodes;
+
+            down.children;
+            down.parentNode;
+            down.nextElementSibling;
+            down.onclick = function() {
+                index--;
+                if (index < 0) {
+                    index = imgList.length - 1;
+                }
+                box.src = imgList[index];
+            }
+
+
+            findById("up", function() {
+                index++;
+                if (index >= imgList.length) {
+                    index = 0;
+                }
+                box.src = imgList[index];
+            });
+
+
+
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="div1">
+        <img id="box" src="../img/banner_0.jpg" alt="图片加载异常">
+    </div>
+
+    <div class="btn">
+        <button id="down">下一张</button>
+        <button id="up">上一张</button>
+
+    </div>
+
+</body>
+
+</html>

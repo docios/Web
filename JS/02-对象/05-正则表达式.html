@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            // var reg = new RegExp("正则表达式","匹配模式");
+
+            // reg.test("检测的字符串");
+
+            var str = "1a2b3c4d5e6f7";
+            var result = str.split(/[A-z]/);
+            console.log(result);
+            str = "hello abc hello aec afc";
+
+            result = str.search(/a[bef]c/);
+            console.log(result);
+
+            str = "1a2b3c4d5e6f7";
+            result = str.match(/[A-z]/g)
+            console.log(result);
+
+            str = "18353269340";
+
+            //手机号 
+            // 1.以1开头 
+            // 2.第二位：3-9任意数字 
+            // 3.三位以后9个数字
+            //  /^1[3-9][0-9]{9}/
+
+            var reg = /^1[3-9][0-9]{9}$/;
+
+            result = reg.test(str);
+            console.log(result);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

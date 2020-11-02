@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aa {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+        }
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            /* background-color: red; */
+        }
+    </style>
+    <script src="../common/common.js" type="text/javascript"></script>
+    <script>
+        window.onload = function() {
+            var btn = document.getElementById("btn");
+            var box = document.getElementById("box");
+            btn.onclick = function() {
+                // box.className += " box1";
+                // addClass(box, "box1");
+                // addClass(box, "box1");
+                //  removeClass(box, "box1");
+                toggleClass(box, "box1");
+            }
+
+        };
+
+        /**
+         * 添加类
+         * @param {Object} obj 对象
+         * @param {Object} valueName 属性名
+         */
+        function addClass(obj, valueName) {
+            if (!hasClass(obj, valueName)) {
+                obj.className += " " + valueName;
+
+            }
+        }
+
+        /**
+         * 判断是否含有该类
+         * @param {Object} obj 对象
+         * @param {Object} valueName 属性名
+         */
+        function hasClass(obj, valueName) {
+            var reg = new RegExp("\\b" + valueName + "\\b");
+            return reg.test(obj.className);
+        }
+
+
+        /**
+         * 移除类
+         * @param {Object} obj 对象
+         * @param {Object} valueName 属性名
+         */
+        function removeClass(obj, valueName) {
+            var reg = new RegExp("\\b" + valueName + "\\b");
+            obj.className = obj.className.replace(reg, "");
+
+        }
+
+
+        function toggleClass(obj, valueName) {
+            if (!hasClass(obj, valueName)) {
+                addClass(obj, valueName);
+            } else {
+                removeClass(obj, valueName);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <button id="btn">点击切换</button>
+    <br><br>
+    <div id="box" class="aa box1">
+
+    </div>
+</body>
+
+</html>

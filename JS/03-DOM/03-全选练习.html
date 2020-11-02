@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //监听回调
+        function viewById(viewId, callBackFun) {
+            document.getElementById(viewId).onclick = callBackFun;
+        }
+        window.onload = function() {
+            //获取全部input
+            var inputLists = document.getElementsByName("items");
+            //全选/全不选
+            var know = document.getElementById("know");
+
+            //全选
+            viewById("all_select", function() {
+                for (var index = 0; index < inputLists.length; index++) {
+                    inputLists[index].checked = true;
+                }
+                know.checked = true;
+
+            });
+
+            //全不选
+            viewById("no_select", function() {
+                for (var index = 0; index < inputLists.length; index++) {
+                    inputLists[index].checked = false;
+                }
+                know.checked = false;
+            });
+
+            //反选
+            viewById("reverse_select", function() {
+                for (var index = 0; index < inputLists.length; index++) {
+                    know.checked = true
+                    inputLists[index].checked = !inputLists[index].checked;
+                    for (var p = 0; p < inputLists.length; p++) {
+                        if (!inputLists[p].checked) {
+                            know.checked = false;
+                        }
+                    }
+                }
+            });
+
+            //提交
+            viewById("submit", function() {
+                for (var index = 0; index < inputLists.length; index++) {
+                    if (inputLists[index].checked) {
+                        alert(inputLists[index].value);
+                    }
+                }
+            });
+
+            //功能按钮遍历
+            for (var index = 0; index < inputLists.length; index++) {
+                inputLists[index].onclick = function() {
+                    know.checked = true
+                    for (var p = 0; p < inputLists.length; p++) {
+                        if (!inputLists[p].checked) {
+                            know.checked = false;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            //全选/全不选
+            know.onclick = function() {
+                for (var index = 0; index < inputLists.length; index++) {
+                    inputLists[index].checked = this.checked;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <span>今年的目标是?</span>
+        <input type="checkbox" id="know" />全选/全不选
+        <br>
+        <input type="checkbox" name="items" value="Flutter" />Flutter
+        <input type="checkbox" name="items" value="WEB" />WEB
+        <input type="checkbox" name="items" value="小程序" />小程序
+        <input type="checkbox" name="items" value="NodeJs" />NodeJs
+        <br>
+        <input type="button" id="all_select" value="全选" />
+        <input type="button" id="no_select" value="全不选" />
+        <input type="button" id="reverse_select" value="反选" />
+        <input type="button" id="submit" value="提交" />
+    </form>
+</body>
+
+</html>

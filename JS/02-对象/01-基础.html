@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var obj = new Object();
+        obj.age = 12;
+        console.log(obj);
+        console.log(["age"] in obj);
+
+        function sum(a, b) {
+            return a + b;
+
+        }
+        var total = sum(5, 6);
+        console.log("total:" + total);
+
+
+
+        function fun3() {
+            function fun4() {
+                console.log("12345678");
+            }
+            return fun4;
+        }
+
+
+        fun3()();
+
+        (function() {
+
+            console.log("1209876543345678");
+
+        })()
+
+        var obj5 = {
+            name: "张三",
+            age: 20,
+            gender: "男"
+
+        }
+
+        for (var item in obj5) {
+            console.log("item---》" + item);
+            console.log("item---》" + obj5[item]);
+
+        }
+        console.log("p---》" + window.p);
+        p = 25;
+
+        var a = 123;
+
+        // function fun6(a) {
+        //     var a;
+        //     alert(a); //underfined
+        //     a = 456;
+        // }
+        // fun6();
+        // alert(a); //123
+
+        // function fun6(a) {
+        //     var a;
+        //     alert(a); //123
+        //     a = 456;
+        // }
+        // fun6(123);
+        // alert(a); //123
+
+        alert(window.aq); //123
+
+        aq = 5;
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

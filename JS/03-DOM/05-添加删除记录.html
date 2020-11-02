@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #submit_div {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function viewById(viewId, callBackFun) {
+            document.getElementById(viewId).onclick = callBackFun;
+        }
+
+        function getA() {
+            var tr = this.parentNode.parentNode;
+            var text = tr.children[0].innerHTML;
+            var confirmDelete = confirm("确定删除" + text + "吗?");
+            if (confirmDelete) {
+                tr.parentNode.removeChild(tr);
+            }
+            return false;
+        }
+
+        window.onload = function() {
+            var aList = document.getElementsByTagName("a"); //获取所有的a标签
+
+
+            var trlUASR = document.getElementById("tabble");
+
+            trlUASR.onclick = function(event) {
+                event = event || window.event;
+
+                if (event.target.className == "dsjfdj") {
+                    var tr2 = this.children.children;
+                    // var lst = tr.lastElementChild;
+                    console.log(this);
+
+
+                }
+
+                return false;
+            }
+
+
+
+
+
+            // for (var index = 0; index < aList.length; index++) {
+            //     console.log("aList.length:" + aList.length);
+            //     aList[index].onclick = getA;
+            // }
+
+
+
+            viewById("submit", function() {
+
+
+
+                var kecheng = document.getElementById("kecheng").value;
+                var shichang = document.getElementById("shichang").value;
+                var huaqian = document.getElementById("huaqian").value;
+                var tr = document.createElement("tr");
+                var kechengTd = document.createElement("td");
+                kechengTd.innerHTML = kecheng;
+                tr.appendChild(kechengTd);
+                var shichangTd = document.createElement("td");
+                shichangTd.innerHTML = shichang;
+                tr.appendChild(shichangTd);
+                var huaqianTd = document.createElement("td");
+                huaqianTd.innerHTML = huaqian;
+                tr.appendChild(huaqianTd);
+                var aTd = document.createElement("td");
+                var a = document.createElement("a");
+                a.href = "#";
+                a.className = "dsjfdj"
+
+                // a.onclick = getA;
+
+
+                var Delete = document.createTextNode("Delete");
+                a.appendChild(Delete);
+                aTd.appendChild(a);
+                // aTd.innerHTML = '<a href="#"> Delete</a>';
+
+                tr.appendChild(aTd);
+                document.getElementsByTagName("tbody")[0].appendChild(tr);
+
+                // document.getElementById("tabble").appendChild;
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1" style="align-self: center; border-spacing: 1px; " id="tabble">
+        <tr>
+            <th>课程</th>
+            <th>学习时长(天)</th>
+            <th>是否花钱</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Flutter</td>
+            <td>12</td>
+            <td>否</td>
+            <td>
+                <a href="#" class="dsjfdj">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Kotlin</td>
+            <td>15</td>
+            <td>是</td>
+            <td>
+                <a href="#" class="dsjfdj">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>小程序</td>
+            <td>15</td>
+            <td>否</td>
+            <td>
+                <a href="#" class="dsjfdj">Delete</a>
+            </td>
+        </tr>
+    </table>
+    <div id="submit_div">
+        <span>添加新学习目标</span>
+        <br> 课程 :<input type="text" name="kecheng" placeholder="请输入课程" id="kecheng" />
+        <br> <br> 学习时长 :<input type="text" placeholder="学习时长" name="shichang" id="shichang" />
+        <br> <br> 是否花钱 :<input type="text" placeholder="是否花钱" name="huaqian" id="huaqian" />
+        <br>
+        <br>
+        <button id="submit"> 提交</button>
+    </div>
+</body>
+
+</html>

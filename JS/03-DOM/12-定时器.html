@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+        
+        #box {
+            margin: 20px auto;
+        }
+        
+        .btn {
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function findById(viewId, callBackFun) {
+            var byId = document.getElementById(viewId);
+            byId.onclick = callBackFun;
+        }
+
+        window.onload = function() {
+            // var num = 1;
+            // var tltle = document.getElementById("tltle");
+            // var timer = setInterval(function() {
+            //     tltle.innerHTML = num++;
+            //     if (num == 10) {
+            //         clearInterval(timer);
+            //     }
+            // }, 1000);
+
+            // var start = document.getElementById("start") //开始
+            // var stop = document.getElementById("stop") // 停止
+            var box = document.getElementById("box"); // 图片
+
+            var imgList = [
+                "../img/banner_0.jpg",
+                "../img/banner_1.jpg",
+                "../img/banner_2.jpg",
+                "../img/banner_3.jpg",
+            ];
+            var index = 0;
+
+            var timer;
+
+            findById("start", function() {
+                clearInterval(timer);
+                timer = setInterval(function() {
+                        index++;
+                        index %= imgList.length;
+                        // if (index == imgList.length) {
+                        //     index = 0;
+                        // }
+                        box.src = imgList[index];
+
+                    },
+                    1000);
+            });
+            findById("stop", function() {
+
+                clearInterval(timer);
+                console.log("1234");
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <h1 id="tltle">1</h1>
+
+    <div id="div1">
+        <img id="box" src="../img/banner_0.jpg" alt="图片加载异常">
+    </div>
+    <div>
+        <button id="start">开始播放</button>
+        <button id="stop">暂停</button>
+
+    </div>
+</body>
+
+</html>

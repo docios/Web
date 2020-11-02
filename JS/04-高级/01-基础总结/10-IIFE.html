@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script>
+    /**
+     * IIFE :Immediately-Invoked Function Expression(匿名函数自调用)
+     * 作用:
+     *    隐藏实现
+     *    不污染全局命名空间
+     */
+    (function () {
+      var a = 1;
+      function fn() {
+        a++;
+        console.log(a);
+      }
+      window.$ = function () {
+        return {
+          fn: fn
+        }
+      }
+    })()
+		$().fn();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

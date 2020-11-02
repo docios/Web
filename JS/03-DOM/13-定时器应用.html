@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #box1 {
+        width: 100px;
+        height: 100px;
+        background-color: #bfa;
+        position: absolute;
+        left: 0px;
+      }
+
+      #box2 {
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        position: absolute;
+        left: 0px;
+        top: 200px;
+      }
+    </style>
+    <script>
+      function setStyle(obj, name) {
+        if (window.getComputedStyle) {
+          return window.getComputedStyle(obj, null)[name];
+        } else {
+          return obj.currentStyle[name];
+        }
+      }
+
+      /**
+       * @param {Object} obj 
+       * @param {Object} attr 属性
+       * @param {Object} target 移动目标
+       * @param {Object} value每次移动的距离 正直向右移动
+       */
+      function move(obj,attr, target, value) {
+        clearInterval(obj.timer);
+        var oldValue = parseInt(setStyle(obj, attr)); //获取当前obj 对象距离左侧的距离
+        if (target < oldValue) {
+          value = -value;
+        }
+
+        obj.timer = setInterval(function() {
+          oldValue += value;
+          if (value < 0 && oldValue <= target || value > 0 && oldValue >= target) {
+            oldValue = target;
+          }
+
+          if (oldValue == target) {
+            clearInterval(obj.timer);
+          }
+          obj.style[attr] = oldValue + "px";
+        }, 100);
+
+
+
+
+      }
+
+
+      //  var timer;
+
+      window.onload = function() {
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+
+        var box = document.getElementById("box");
+
+        btn1.onclick = function() {
+          move(box1,"left" ,800, 36);
+          // clearInterval(timer);
+          // var left1 = parseInt(setStyle(box1, "left"));
+          // timer = setInterval(function() {
+          //   left1 += 18;
+          //   if (left1 >= 800) {
+          //     left1 = 800;
+          //   }
+          //   if (left1 == 800) {
+          //     clearInterval(timer);
+          //   }
+          //   box1.style.left = left1 + "px";
+          // }, 100);
+        };
+
+        btn2.onclick = function() {
+          move(box1,"left", 0, 55);
+          // clearInterval(timer);
+          // var left1 = parseInt(setStyle(box1, "left"));
+          // timer = setInterval(function() {
+          //   left1 -= 18;
+          //   if (left1 < 0) {
+          //     left1 = 0;
+          //   }
+          //   if (left1 == 0) {
+          //     clearInterval(timer);
+          //   }
+          //   box1.style.left = left1 + "px";
+          // }, 100);
+        };
+
+        btn3.onclick = function() {
+          move(box2,"left", 800, 20);
+          // clearInterval(timer);
+          // var left1 = parseInt(setStyle(box1, "left"));
+          // timer = setInterval(function() {
+          //   left1 -= 18;
+          //   if (left1 < 0) {
+          //     left1 = 0;
+          //   }
+          //   if (left1 == 0) {
+          //     clearInterval(timer);
+          //   }
+          //   box1.style.left = left1 + "px";
+          // }, 100);
+        };
+     btn3.onclick = function() {
+          move(box2,"left", 800, 20);
+     
+        };
+
+ btn4.onclick = function() {
+          move(box2,"width", 800, 20);
+     
+        };
+
+
+
+
+
+
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <button id="btn1">点击向右移动</button>
+    <button id="btn2">点击向左移动</button>
+    <button id="btn3">点击向左移动</button>
+    <button id="btn4">测试</button>
+
+    <br><br>
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+    <div style="width: 0px; height: 1000px; position: absolute; border-left: 1px solid red; left: 800px;"></div>
+
+  </body>
+
+</html>

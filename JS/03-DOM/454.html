@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script>
+    var obj = {
+      b1: function () {
+        console.log("b1");
+        return function () {
+          return "very good";
+        }
+      }
+    };
+    var str = obj.b1()();
+    console.log("str:" + str);
+    var obj1={
+      name:"tOM"
+		};
+    function fn(obj) {
+      obj.name="a";
+    }
+    fn(obj1);
+    console.log(obj1.name);
+    var a={
+       age:12
+		}
+		var b=a;
+    a={
+      nmae:"TOM",
+      age:15
+		};
+
+
+
+    console.log(b.age,a.age,a.nmae);//12,15,"TOM"
+
+		function  fn2(obj) {
+      a={
+        age:20
+			};
+      console.log(obj.nmae+"2134567");//20
+    }
+
+
+    fn2(a);
+
+    console.log(a.age);//20
+
+     var q=10;
+    function  fn3(q) {
+      q++;
+
+    }
+    fn3(q);
+    console.log("q的值:"+q);//10
+
+
+
+
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

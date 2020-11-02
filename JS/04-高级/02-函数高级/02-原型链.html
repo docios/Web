@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script type="text/javascript">
+    function Fn() {
+      this.test1 = function () {
+        console.log("test1")
+      }
+    }
+
+    Fn.prototype.test2 = function () {
+      console.log("test2")
+    }
+
+    console.log(Fn.__proto__ === Function.prototype)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

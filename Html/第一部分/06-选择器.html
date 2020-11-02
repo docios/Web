@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        元速选择器
+        id
+        .calss
+        *
+        交集/并集  --》选择器
+        属性   ^=,$=,[属性名 *=属性值]
+        伪类选择器
+          a标签 link，visited,hover,actived
+          :before,after,nth-of-child,nth-of-type
+          odd,even
+ li:nth-of-type(3n+1) {
+            background-color: blue;
+        }
+         div:only-of-type {
+            background-color: blue;
+        } */
+        
+        div {
+            height: in;
+        }
+        
+        ul :nth-child(2) {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <div>aaaaa</div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div>aaaaa</div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+</body>
+
+</html>

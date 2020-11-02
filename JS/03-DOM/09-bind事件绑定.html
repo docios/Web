@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bind(obj, eventStr, callBackFun) {
+            if (obj.addEventListener) {
+              //addEventListener
+              obj.addEventListener(eventStr, callBackFun, false);
+              console.log("addEventListener 方法 ------");
+            
+            } else {
+             //attachEvent
+             obj.attachEvent("on" + eventStr, function(){
+               callBackFun.call(obj);
+             });
+             console.log("attachEvent 方法 ------");
+            }
+        }
+        window.onload = function() {
+            var btn1 = document.getElementById("btn1");
+            bind(btn1, "click", function() {
+                alert("12345678");
+
+            });
+
+            // btn1.addEventListener("click", function() {}, false);//
+            // btn1.attachEvent("onclick",function(){})
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn1">点我一下</button>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+        }
+    </style>
+    <script>
+        function setStyle(obj, value) {
+            if (window.getComputedStyle) {
+                return getComputedStyle(obj, null)[value];
+            } else {
+                return obj.currectStyle()[value];
+            }
+        }
+        window.onload = function() {
+            //
+            var btn = document.getElementById("btn");
+
+            var box1 = document.getElementById("box1");
+            box1.clientHeight;
+            box1.offsetHeight;
+            box1.offsetParent;
+
+            btn.onclick = function() {
+                box1.style.width = "300px";
+
+                // var wStyle= setStyle(box1,"width");
+                //    alert("wStyle:" + wStyle);
+                // var obj = getComputedStyle(box1, null);
+                // obj.width = 300 + "px";
+                // alert("" + obj.width);
+
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn">点击</button>
+    <br>
+    <br>
+    <div id="box1">
+
+    </div>
+</body>
+
+</html>

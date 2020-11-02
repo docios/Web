@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script type="text/javascript">
+    /**
+		 * 1.构造函数的显示原型等于实例对象的隐式原型(Object除外)
+		 * 2.任何函数都是Function的实例(包括它本身)
+		 * 3.Object实例对象是原型链的尽头(null)
+     */
+    console.log(Object.prototype instanceof Object)
+    console.log(Function.prototype === Function.__proto__);
+    console.log(Object.prototype.__proto ===null);
+
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

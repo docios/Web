@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                                                                                                                                              选择器
+                                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                               关系选择器：
+                                                                                                                                                                                                                                                                                                                                                                       父 > 子
+                                                                                                                                                                                                                                                                                                                                                                       祖先  后代
+                                                                                                                                                                                                                                                                                                                                                                       下一个兄弟 前一个元素 + 后一个元素
+                                                                                                                                                                                                                                                                                                                                                                        选择下边所有的兄弟 前一个元素 ~ 后一个元素  
+                                                                                                                                                                                                                                                                                                                                                               属性选择器：
+                                                                                                                                                                                                                                                                                                                                                                   p[属性名]
+                                                                                                                                                                                                                                                                                                                                                                   p[属性名=属性值]
+                                                                                                                                                                                                                                                                                                                                                                   p[属性名 ^=属性值]-->以...开头
+                                                                                                                                                                                                                                                                                                                                                                   p[属性名 $=属性值]-->以...结尾
+                                                                                                                                                                                                                                                                                                                                                                   p[属性名 *=属性值]-->包含某个元素
+                                                                                                                                                                                                                                                                                                                                                               伪类选择器:
+                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                              */
+
+
+        var a = null;
+        a = String(a);
+        console.log(a);
+        console.log(typeof a);
+        a = " ";
+        a = Boolean(a);
+        console.log(a); // ""-->false , " "-->true
+
+
+        a = 1;
+
+        console.log(a++);
+        console.log(a++);
+
+        var e;
+        var d = 20;
+
+        var e = d++; //d++ --10 ;d=11
+        console.log(d);
+        d = e;
+        console.log(d);
+
+        var f = 3 && 1;
+        console.log(f);
+    </script>
+</head>
+
+<body>
+    <button onclick="alert('被点击啦')">点击登录</button>
+    <a href="javascript:;">点击跳转</a>
+    <a href="#">点击跳转</a>
+</body>
+
+</html>》

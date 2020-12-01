@@ -1,0 +1,133 @@
+@charset "utf-8";
+/**
+ *多行注释gfgfhjygj
+ */
+//单行注释
+$number: 123px;
+
+.box {
+
+  width: $number / 10;
+  $number: 456px;
+  height: $number+10px;
+  padding: (20px / 1.5);
+
+  &:hover {
+    font: {
+      family: Arial;
+      size: 30px;
+      weight: bold;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+
+  li {
+    float: left;
+
+    div {
+      width: 100px;
+    }
+
+    p {
+      tab-size: 20px;
+    }
+  }
+}
+
+$a: 1;
+.box#{$a} {
+  width: 100px;
+  height: 120px;
+}
+
+
+@function sum($m,$n) {
+  @return $m+$n
+}
+
+.box3 {
+  width: round(3.5px);
+  height: percentage(0.2);
+  margin: random()+px;
+  font-size: sum(20px, 4px);
+}
+
+@mixin show {
+  display: block;
+}
+
+@mixin hide($color) {
+  overflow: hidden;
+  color: $color;
+}
+
+.box7 {
+  width: 200px;
+  @include show;
+  @include hide(#bfa);
+}
+
+
+.line {
+  display: block;
+}
+
+.box8 {
+  @extend .line;
+}
+
+.box9 {
+  @extend .line;
+}
+
+$value: (
+        a : url("./a.png"),
+        b : url("./b.png")
+);
+
+$zhuan: (
+        a : rotateY(320deg),
+        b :translate(30px),
+);
+.box10 {
+  background: map-values($value);
+  transform: zip(map-values($zhuan));
+}
+
+.box11 {
+  width: 100px;
+  @media all and (min-width: 768px) {
+    width: 500px;
+  }
+  @media all and (min-width: 1400px) {
+    width: 900px;
+  }
+}
+
+$count: 3;
+
+@function get($cn) {
+  @if ($cn>5) {
+    @return 100px + $cn;
+  } @else if ($cn <5) {
+    @return 10px + $cn;
+  }
+}
+
+.box12 {
+  width: get($count);
+}
+
+
+@for  $i from 0 through 2{
+ .box-#{$i}{
+   width: 100px+$i;
+ }
+}
+@import "reset";
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    #box1 {
+      background: #bfa;
+      height: 100px;
+      width: 100px;
+    }
+    
+    #box2 {
+      background: #bfa;
+      height: 100px;
+      width: 100px;
+      transform: translate(100px, 0px) scale(.5);
+    }
+    
+    #box3 {
+      background: #bfa;
+      height: 100px;
+      width: 100px;
+      transform: scale(.5) translate(100px, 100px);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul {
+      width: 440px;
+      height: 30px;
+      margin: 30px auto;
+      overflow: hidden;
+    }
+    
+    ul li {
+      list-style: none;
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      float: left;
+      background: #bfa;
+      margin: 0 5px;
+      text-align: center;
+      transform: skew(-30deg);
+    }
+    
+    ul li span {
+      display: block;
+      transform: skew(30deg);
+    }
+    
+    ul li:first-child {
+      padding-left: 10px;
+      margin-left: -10px;
+      
+    }
+    
+    ul li:last-child {
+      padding-right: 20px;
+      margin-right: -20px;
+      
+    }
+    
+    img {
+      display: block;
+    }
+    
+    #box4 {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      
+    }
+    
+   
+  
+  
+  </style>
+</head>
+<body>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<br>
+<ul>
+  <li><span>地图展示</span></li>
+  <li><span>设备管理</span></li>
+  <li><span>资产管理</span></li>
+  <li><span>运单管理</span></li>
+</ul>
+
+<br>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    #parment {
+      width: 300px;
+      height: 400px;
+      margin: 100px auto;
+      display: grid;
+      grid-template:
+        "a1 a2 a2" 1fr
+        "a3 a2 a2" 1fr
+        "a4 a4 a5" 1fr
+        "a6 a7 a7" 1fr/
+        1fr 1fr 1fr;
+    }
+    #parment div{
+      color: white;
+    }
+    #parment div:first-child {
+      grid-area: a1;
+      background: #ac9f5a;
+    }
+
+    #parment div:nth-child(2) {
+      grid-area: a2;
+      background: #bfa;
+    }
+
+    #parment div:nth-child(3) {
+      grid-area: a3;
+      background: red;
+    }
+
+    #parment div:nth-child(4) {
+      grid-area: a4;
+      background: purple;
+    }
+
+    #parment div:nth-child(5){
+      grid-area: a5;
+      background: gray;
+    }
+    #parment div:nth-child(6){
+      grid-area: a6;
+      background: blue;
+    }
+
+    #parment div:nth-child(7){
+      grid-area: a7;
+      background: fuchsia;
+    }
+  </style>
+
+
+</head>
+
+
+<body>
+<div id="parment">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+</body>
+</html>

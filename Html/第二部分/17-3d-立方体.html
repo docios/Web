@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .box {
+      margin: 100px auto;
+      width: 60px;
+      height: 60px;
+      perspective: 100px;
+      -webkit-perspecitve-origin: right ;
+    }
+    
+    ul {
+      list-style: none;
+      width: 60px;
+      height: 60px;
+      position: relative;
+
+      transition: 10s;
+      transform-style: preserve-3d;
+      /*transform-origin:center center -50px;*/
+    }
+    
+    li {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      line-height: 60px;
+      text-align: center;
+    }
+    
+    ul li:nth-child(1) {
+      background: #9d9d9d;
+      left: 0;
+      top: 0;
+    }
+    
+    ul li:nth-child(2) {
+      left: 60px;
+      top: 0;
+      transform-origin: left;
+      background: red;
+      transform: rotateY(90deg);
+    }
+    
+    
+    ul li:nth-child(3) {
+      left: -60px;
+      top: 0;
+      transform-origin: right;
+      background: #bfa;
+      transform: rotateY(-90deg);
+    }
+    
+    ul li:nth-child(4) {
+      left: 0px;
+      top: 60px;
+      transform-origin: top;
+      background: purple;
+      transform: rotateX(-90deg);
+    }
+    
+    
+    ul li:nth-child(5) {
+      left: 0px;
+      top: -60px;
+      transform-origin: bottom;
+      background: blue;
+      transform: rotateX(90deg);
+    }
+    
+    ul li:nth-child(6) {
+      background: #66c584;
+      transform: translateZ(-60px) rotateY(180deg);
+    }
+
+    div:hover ul{
+      transform: rotateY(360deg);
+    }
+  
+  
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+  
+  
+  </ul>
+</div>
+
+
+</body>
+</html>

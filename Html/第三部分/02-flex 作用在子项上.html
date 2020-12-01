@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Title</title>
+  <style type="text/css">
+    #parent{
+      width: 300px;
+      height: 300px;
+      border: 1px solid red;
+      margin: 30px auto;
+     
+      display: flex;
+      order: ;
+      flex-grow: ;
+      flex-shrink: ;
+      flex: ;
+      flex-basis: ;
+      align-self: ;
+      
+      
+    }
+    #parent div{
+     
+      width: 60px;
+      height: 60px;
+      background: #bfa;
+      line-height: 60px;
+      text-align: center;
+    }
+    #parent div:nth-child(2){
+      /**
+     * 作用在flex 子容器上
+     */
+      order: 1;
+      flex-grow: ;
+      flex-shrink: ;
+      flex-basis: ;
+      flex;
+      align-self: ;
+    }
+  </style>
+</head>
+<body>
+<div id="parent">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+</div>
+
+</body>
+</html>

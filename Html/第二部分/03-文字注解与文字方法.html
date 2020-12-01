@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    span {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+    
+    /*#poem {*/
+    /*  float: right;*/
+    /*}*/
+    
+    
+    #poem bdo {
+      direction: rtl;
+      float: right;
+      width: 30px;
+    }
+  
+  </style>
+</head>
+<body>
+<ruby>
+  寒
+  <rt>hán</rt>
+  冷的冬天
+</ruby>
+<p>新的
+  <bdo dir="rtl">NBA</bdo>
+  赛季即将到来</p>
+<span>NBA</span>
+<br>
+<div id="poem">
+  <bdo>春眠不觉晓 ，</bdo>
+  <bdo>处处闻啼鸟 。</bdo>
+  <bdo>夜来风雨声 ，</bdo>
+  <bdo>花落知多少 。</bdo>
+</div>
+
+
+</body>
+</html>

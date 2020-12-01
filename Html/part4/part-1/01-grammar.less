@@ -1,0 +1,118 @@
+/**
+ *多行注释
+ */
+//单行注释
+@number: 123px;
+@a: 1;
+.box {
+  height: @number;
+  //@number: 180px;
+  width: @number+20;
+  padding: ~"20 / 1.5";
+
+  &:hover {
+    background: #0b2e13;
+    /** less 不支持属性的嵌套
+     font:{
+      family: Arial;
+      size: 30px;
+     weight: bold;
+    }
+     */
+  }
+}
+
+ul {
+  list-style: none;
+
+  li {
+    float: left;
+
+    div {
+      width: 100px;
+    }
+
+    p {
+      tab-size: 20px;
+    }
+  }
+}
+
+.box@{a} {
+  width: 100px;
+  height: 100px;
+
+}
+//混入
+.show{
+  display: block;
+}
+
+.hide(@color) {
+  overflow: hidden;
+  color: @color;
+}
+
+.box7 {
+  width: 100px;
+  .show;
+  .hide(red);
+}
+
+#nm(){
+  .show{
+    display: inline-block;
+  };
+}
+.box8{
+  #nm.show;
+}
+.line{
+  display: grid;
+}
+.box9{
+  &:extend(.line);
+}
+.box10{
+  &:extend(.line);
+}
+
+.box10{
+  background+: url("./a.png");
+  background+: url("./b.png");
+  transform +_: rotate3d(320deg);
+  transform+_: translate(30px);
+}
+
+
+.box11{
+  width: 100px;
+  @media all and (min-width: 768px){
+    width: 500px;
+  }
+  @media all and (min-width: 1400px){
+    width: 900px;
+  }
+}
+
+@count:4;
+.get(@cn) when(@cn > 5){
+  width: 50px+@cn;
+}
+.get(@cn) when(@cn < 5){
+  width: 10px+@cn;
+}
+.box12{
+ .get(@count) ;
+}
+//less 通过递归的方式来遍历
+
+@nn:0;
+.get2 (@cn) when(@cn < 4){
+  .get2(@cn+1);
+  .box-@{cn}{
+    width: 100px + @cn;
+  }
+}
+.get2(@nn);
+@import "./reset";

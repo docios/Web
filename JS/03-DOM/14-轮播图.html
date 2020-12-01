@@ -2,195 +2,193 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        /*
-				 * 设置外部边框
-				 1440*500
-				 */
-        
-        #outer {
-            margin: 50px auto;
-            width: 1440px;
-            height: 500px;
-            position: relative;
-            overflow: hidden;
-        }
-        /*
-				 * 设置外部边框
-				 1440*500  5760
-				 */
-        
-        #imgList {
-            list-style: none;
-            position: absolute;
-        }
-        
-        #imgList li {
-            float: left;
-        }
-        
-        #nav {
-            position: absolute;
-            bottom: 15px;
-            left: 10px;
-        }
-        
-        #nav a {
-            width: 8px;
-            height: 8px;
-            border: white 2px solid;
-            border-radius: 8px;
-            float: left;
-            bottom: 10px;
-            margin: 0 4px;
-        }
-        
-        #nav a:hover {
-            background-color: white;
-        }
-    </style>
-    <script>
-        window.onload = function() {
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+      * {
+          margin: 0px;
+          padding: 0px;
+      }
 
-            var outer = document.getElementById("outer");
+      /*
+       * 设置外部边框
+       1440*500
+       */
 
-            //获取ul
-            var imgList = document.getElementById("imgList");
-            //获取展示的img的大小
-            var imgArr = document.getElementsByTagName("img");
-            imgList.style.width = imgArr.length * 1440 + "px";
-            //获取底部
-            var nav = document.getElementById("nav");
-            //获取底部有a标签的个数
-            var aList = document.getElementsByTagName("a");
-            //让底部原点居中显示
-            nav.style.left = (outer.offsetWidth - nav.offsetWidth) / 2 + "px";
-            var selectPosition = 0;
-            aList[selectPosition].style.backgroundColor = "white";
-            //设置a标签的响应函数
-            for (var i = 0; i < aList.length; i++) {
-                aList[i].index = i;
-                aList[i].onclick = function() {
-                    clearInterval(timer);
-                    selectPosition = this.index;
-                    setClickAStyle();
-                    //   imgList.style.left = -1440 * selectPosition + "px";
-                    move(imgList, "left", -1440 * selectPosition, 1440, function() {
-                        changeBanner();
-                    });
-                    //console.log("向左偏移:" + -1440 * selectPosition + "px");
-                }
-            }
-            //设置点击a 标签时的样式
-            function setClickAStyle() {
+      #outer {
+          margin: 50px auto;
+          width: 1440px;
+          height: 500px;
+          position: relative;
+          overflow: hidden;
+      }
 
-                if (selectPosition >= imgArr.length - 1) {
-                    selectPosition = 0;
-                    imgList.style.left = 0 + "px";
-                    console.log("执行啦------");
-                }
-                for (var i = 0; i < aList.length; i++) {
-                    aList[i].style.backgroundColor = "";
-                }
-                aList[selectPosition].style.backgroundColor = "white";
-            }
+      /*
+       * 设置外部边框
+       1440*500  5760
+       */
 
-            changeBanner();
-            var timer;
+      #imgList {
+          list-style: none;
+          position: absolute;
+      }
 
-            function changeBanner() {
-                timer = setInterval(function() {
-                    selectPosition++;
-                    selectPosition %= imgArr.length;
+      #imgList li {
+          float: left;
+      }
 
+      #nav {
+          position: absolute;
+          bottom: 15px;
+          left: 10px;
+      }
 
-                    move(imgList, "left", -1440 * selectPosition, 1440, function() {
-                        setClickAStyle();
-                    });
-                }, 2000);
+      #nav a {
+          width: 8px;
+          height: 8px;
+          border: white 2px solid;
+          border-radius: 8px;
+          float: left;
+          bottom: 10px;
+          margin: 0 4px;
+      }
 
-            }
+      #nav a:hover {
+          background-color: white;
+      }
+  </style>
+  <script>
+      window.onload = function () {
 
-        };
+          var outer = document.getElementById("outer");
+
+          //获取ul
+          var imgList = document.getElementById("imgList");
+          //获取展示的img的大小
+          var imgArr = document.getElementsByTagName("img");
+          imgList.style.width = imgArr.length * 1440 + "px";
+          //获取底部
+          var nav = document.getElementById("nav");
+          //获取底部有a标签的个数
+          var aList = document.getElementsByTagName("a");
+          //让底部原点居中显示
+          nav.style.left = (outer.offsetWidth - nav.offsetWidth) / 2 + "px";
+          var selectPosition = 0;
+          aList[selectPosition].style.backgroundColor = "white";
+          //设置a标签的响应函数
+          for (var i = 0; i < aList.length; i++) {
+              aList[i].index = i;
+              aList[i].onclick = function () {
+                  clearInterval(timer);
+                  selectPosition = this.index;
+                  setClickAStyle();
+                  //   imgList.style.left = -1440 * selectPosition + "px";
+                  move(imgList, "left", -1440 * selectPosition, 1440, function () {
+                      changeBanner();
+                  });
+                  //console.log("向左偏移:" + -1440 * selectPosition + "px");
+              }
+          }
+
+          //设置点击a 标签时的样式
+          function setClickAStyle() {
+
+              if (selectPosition >= imgArr.length - 1) {
+                  selectPosition = 0;
+                  imgList.style.left = 0 + "px";
+                  console.log("执行啦------");
+              }
+              for (var i = 0; i < aList.length; i++) {
+                  aList[i].style.backgroundColor = "";
+              }
+              aList[selectPosition].style.backgroundColor = "white";
+          }
+
+          changeBanner();
+          var timer;
+
+          function changeBanner() {
+              timer = setInterval(function () {
+                  selectPosition++;
+                  selectPosition %= imgArr.length;
 
 
+                  move(imgList, "left", -1440 * selectPosition, 1440, function () {
+                      setClickAStyle();
+                  });
+              }, 2000);
+
+          }
+
+      };
 
 
+      function setStyle(obj, name) {
+          if (window.getComputedStyle) {
+              return window.getComputedStyle(obj, null)[name];
+          } else {
+              return obj.currentStyle[name];
+          }
+      }
 
-        function setStyle(obj, name) {
-            if (window.getComputedStyle) {
-                return window.getComputedStyle(obj, null)[name];
-            } else {
-                return obj.currentStyle[name];
-            }
-        }
+      /**
+       * @param {Object} obj
+       * @param {Object} attr 属性
+       * @param {Object} target 移动目标
+       * @param {Object} value每次移动的距离 正直向右移动
+       * @param {Object} callBackFun 执行成功后的回调函数
+       */
+      function move(obj, attr, target, value, callBackFun) {
+          clearInterval(obj.timer);
+          var oldValue = parseInt(setStyle(obj, attr)); //获取当前obj 对象距离左侧的距离
+          if (target < oldValue) {
+              value = -value;
+          }
+          obj.timer = setInterval(function () {
+              oldValue += value;
+              if (value < 0 && oldValue <= target || value > 0 && oldValue >= target) {
+                  oldValue = target;
+              }
 
-        /**
-         * @param {Object} obj 
-         * @param {Object} attr 属性
-         * @param {Object} target 移动目标
-         * @param {Object} value每次移动的距离 正直向右移动
-         * @param {Object} callBackFun 执行成功后的回调函数
-         */
-        function move(obj, attr, target, value, callBackFun) {
-            clearInterval(obj.timer);
-            var oldValue = parseInt(setStyle(obj, attr)); //获取当前obj 对象距离左侧的距离
-            if (target < oldValue) {
-                value = -value;
-            }
-            obj.timer = setInterval(function() {
-                oldValue += value;
-                if (value < 0 && oldValue <= target || value > 0 && oldValue >= target) {
-                    oldValue = target;
-                }
-
-                if (oldValue == target) {
-                    clearInterval(obj.timer);
-                    callBackFun && callBackFun();
-                }
-                obj.style[attr] = oldValue + "px";
-            }, 200);
-        }
-    </script>
+              if (oldValue == target) {
+                  clearInterval(obj.timer);
+                  callBackFun && callBackFun();
+              }
+              obj.style[attr] = oldValue + "px";
+          }, 200);
+      }
+  </script>
 </head>
 
 <body>
-    <div id="outer">
-        <ul id="imgList">
-            <li>
-                <img src="../img/banner_0.jpg" alt="">
-            </li>
-            <li>
-                <img src="../img/banner_1.jpg" alt="">
-            </li>
-            <li>
-                <img src="../img/banner_2.jpg" alt="">
-            </li>
-            <li>
-                <img src="../img/banner_3.jpg" alt="">
-            </li>
-            <li>
-                <img src="../img/banner_0.jpg" alt="">
-            </li>
+<div id="outer">
+  <ul id="imgList">
+    <li>
+      <img src="../img/banner_0.jpg" alt="">
+    </li>
+    <li>
+      <img src="../img/banner_1.jpg" alt="">
+    </li>
+    <li>
+      <img src="../img/banner_2.jpg" alt="">
+    </li>
+    <li>
+      <img src="../img/banner_3.jpg" alt="">
+    </li>
+    <li>
+      <img src="../img/banner_0.jpg" alt="">
+    </li>
 
-        </ul>
-        <div id="nav">
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-        </div>
+  </ul>
+  <div id="nav">
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+  </div>
 
 
-
-    </div>
-
+</div>
 
 
 </body>

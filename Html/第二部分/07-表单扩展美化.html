@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    /*label input {*/
+    /*  display: none;*/
+    /*}*/
+    
+    /*label div {*/
+    /*  width: 34px;*/
+    /*  height: 32px;*/
+    /*  background: url("../img/checked.png") no-repeat 0 -32px;*/
+    /*}*/
+    
+    /*label input:checked + div {*/
+    /*  background: url("../img/checked.png") no-repeat 0 0;*/
+    /*  */
+    /*}*/
+    label input {
+      display: none;
+    }
+    
+    label div {
+      width: 48px;
+      height: 48px;
+      background: url("../img/upload.png") no-repeat;
+    }
+    
+    #upload {
+      width: 48px;
+      height: 48px;
+    }
+    
+    #upload div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: url("../img/upload.png") no-repeat
+    }
+    
+    #upload input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+    
+    #check {
+      width: 34px;
+      height: 32px;
+      
+    }
+    
+    #check div {
+      width: 100%;
+      height: 100%;
+      background: url("../img/checked.png") no-repeat 0 -32px;
+    }
+  
+  
+  </style>
+</head>
+<body>
+<!--lable + :checked-->
+<!--<label>-->
+<!--  <input type="checkbox">-->
+<!--  <div>-->
+<!--  </div>-->
+<!--</label>-->
+
+
+
+
+<!--<label>-->
+<!--  <input type="file">-->
+<!--  <div>-->
+<!--  </div>-->
+<!--</label>-->
+
+
+<!--<div id="upload">-->
+<!--  <input type="file">-->
+<!--  <div></div>-->
+<!--</div>-->
+
+<form action="https://www.baidu.com" method="post" enctype="multipart/form-data" >
+  
+  <input type="file"  name="filename" >
+  <input type="submit">
+  
+  <fieldset>
+    <legend>登录</legend>
+    <p>账号: <input type="text"></p>
+    <p>密码: <input type="text"></p>
+  </fieldset>
+  
+  <select>
+    <optgroup label="水果"></optgroup>
+    <option>苹果</option>
+    <option>香蕉</option>
+    <option>哈密瓜</option>
+    <optgroup label="蔬菜"></optgroup>
+    <option>黄瓜</option>
+    <option>大葱</option>
+    <option>芹菜</option>
+    
+  </select>
+  
+  
+</form>
+</body>
+</html>

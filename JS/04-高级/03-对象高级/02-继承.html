@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript">
+
+    function Parent() {
+      this.name = "Parent"
+
+    }
+
+    Parent.prototype.showParentProtype = function () {
+      console.log(this.name)
+    }
+
+
+    function Child() {
+      this.name = "Child"
+
+    }
+
+    Child.prototype = new Parent()
+
+    Child.prototype.constructor=Child
+
+    Child.prototype.showChildProtype = function () {
+      console.log(this.name)
+    }
+
+
+    var child = new Child()
+    child.showParentProtype()
+    console.log(child.constructor)
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

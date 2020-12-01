@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
     <script>
         var obj = new Object();
         obj.age = 12;
@@ -16,22 +17,23 @@
             return a + b;
 
         }
+
         var total = sum(5, 6);
         console.log("total:" + total);
-
 
 
         function fun3() {
             function fun4() {
                 console.log("12345678");
             }
+
             return fun4;
         }
 
 
         fun3()();
 
-        (function() {
+        (function () {
 
             console.log("1209876543345678");
 

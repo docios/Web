@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript">
+
+ function Parent(name,age){
+   this.name=name
+   this.age=age
+
+ }
+
+ function Child(name,age,id){
+    Parent.call(this,name,age)
+   this.id=id
+ }
+ var c=new Child("Jim",30,10000)
+ console.log(c.name,c.age,c.id)
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

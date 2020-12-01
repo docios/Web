@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/**
+ *多行注释gfgfhjygj
+ */
+.box {
+  width: 12.3px;
+  height: 466px;
+  padding: 13.3333333333px; }
+  .box:hover {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold; }
+
+ul {
+  list-style: none; }
+  ul li {
+    float: left; }
+    ul li div {
+      width: 100px; }
+    ul li p {
+      tab-size: 20px; }
+
+.box1 {
+  width: 100px;
+  height: 120px; }
+
+.box3 {
+  width: 4px;
+  height: 20%;
+  margin: 0.3761924519px;
+  font-size: 24px; }
+
+.box7 {
+  width: 200px;
+  display: block;
+  overflow: hidden;
+  color: #bfa; }
+
+.line, .box8, .box9 {
+  display: block; }
+
+.box10 {
+  background: url("./a.png"), url("./b.png");
+  transform: rotateY(320deg), translate(30px); }
+
+.box11 {
+  width: 100px; }
+  @media all and (min-width: 768px) {
+    .box11 {
+      width: 500px; } }
+  @media all and (min-width: 1400px) {
+    .box11 {
+      width: 900px; } }
+
+.box12 {
+  width: 13px; }
+
+.box-0 {
+  width: 100px; }
+
+.box-1 {
+  width: 101px; }
+
+.box-2 {
+  width: 102px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+/*# sourceMappingURL=01-grammar.css.map */

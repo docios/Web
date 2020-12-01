@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    #books {
+      width: 160px;
+      height: 220px;
+      border: 1px solid purple;
+      margin: 80px auto;
+      perspective: 800px;
+    }
+    
+    ul {
+      width: 160px;
+      height: 220px;
+      float: left;
+      border: 1px solid purple;
+      position: relative;
+      box-sizing: border-box;
+      transform-style: preserve-3d;
+    }
+    
+    li {
+      width: 160px;
+      height: 220px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    ul li div{
+      width: 160px;
+      height: 220px;
+      box-sizing: border-box;
+      transition: 4s;
+      transform-origin: left;
+      transform: rotateY(0);
+      border: 1px solid purple;
+    }
+
+
+    ul:hover li:nth-child(1) div{
+      transition-delay: 1s;
+      transform: rotateY(-180deg);
+    }
+
+
+    ul:hover li:nth-child(2) div{
+      transition-delay: 1s;
+      transform: rotateY(-180deg);
+    }
+    ul:hover li:nth-child(3) div{
+      transition-delay: 1s;
+      transform: rotateY(-180deg);
+    }
+    ul:hover li:nth-child(4) div{
+      transition-delay: 1s;
+      transform: rotateY(-180deg);
+    }
+
+    /*// animation: zhuan 4s;*/
+    /*@keyframes zhuan {*/
+    /*  from{*/
+    /*    transform: rotateY(0);*/
+    /*  }*/
+    /*  to{*/
+    /*    transform: rotateY(-180deg);*/
+    /*  }*/
+    /*}*/
+    
+    
+    
+    
+  </style>
+</head>
+<body>
+<div id="books">
+  
+  <ul>
+    <li>
+      <div>第4页</div>
+    </li>
+    <li>
+      <div>第3页</div>
+    <li>
+      <div>第2页</div>
+    </li>
+ 
+    <li>
+      <div>第1页</div>
+    </li>
+  </ul>
+
+
+</div>
+
+</body>
+</html>

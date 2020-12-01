@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul {
+      list-style: none;
+      width: 300px;
+      height: 60px;
+      margin: 60px auto;
+    }
+    
+    li {
+      float: left;
+      width: 60px;
+      height: 100%;
+      position: relative;
+    }
+    
+    li img {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      left: 6px;
+      top: 6px;
+    }
+    
+    ul li:hover img {
+      animation: goMove 0.6s
+    }
+    
+    @keyframes goMove {
+      0% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      
+      60% {
+        transform: translate(0, -50px);
+        opacity: 0;
+      }
+      
+      61% {
+        transform: translate(0, 30px);
+        opacity: 0;
+      }
+      
+      
+      100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+      }
+    }
+  
+  </style>
+</head>
+<body>
+<ul>
+  <li>
+    <img src="../img/address.png" alt="">
+  </li>
+  <li>
+    <img src="../img/assets.png" alt="">
+  </li>
+  <li>
+    <img src="../img/equip.png" alt="">
+  </li>
+  <li>
+    <img src="../img/home.png" alt="">
+  </li>
+  <li>
+    <img src="../img/me.png" alt="">
+  </li>
+
+
+</ul>
+</body>
+</html>

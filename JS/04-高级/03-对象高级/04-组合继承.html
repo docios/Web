@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript">
+    function Parent(name, age) {
+      this.name = name
+      this.age = age
+    }
+
+    Parent.prototype.setName = function (name) {
+      this.name = name
+    }
+
+
+    function Child(name, age, id) {
+      Parent.call(this, name, age)
+      this.id = id
+    }
+
+    Child.prototype=new Parent()
+    Child.prototype.constructor=Child
+    Child.prototype.setAge=function (age){
+      this.age=age
+    }
+    var c=new Child("zhangsan",25,10000)
+    c.setName("lisi")
+    c.setAge(20)
+
+    console.log(c.name,c.age,c.id)
+
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

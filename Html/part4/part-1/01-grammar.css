@@ -1,0 +1,88 @@
+/**
+ *多行注释
+ */
+.box {
+  height: 123px;
+  width: 143px;
+  padding: 20 / 1.5;
+}
+.box:hover {
+  background: #0b2e13;
+  /** less 不支持属性的嵌套
+     font:{
+      family: Arial;
+      size: 30px;
+     weight: bold;
+    }
+     */
+}
+ul {
+  list-style: none;
+}
+ul li {
+  float: left;
+}
+ul li div {
+  width: 100px;
+}
+ul li p {
+  tab-size: 20px;
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+}
+.show {
+  display: block;
+}
+.box7 {
+  width: 100px;
+  display: block;
+  overflow: hidden;
+  color: red;
+}
+.box8 {
+  display: inline-block;
+}
+.line,
+.box9,
+.box10 {
+  display: grid;
+}
+.box10 {
+  background: url("./a.png"), url("./b.png");
+  transform: rotate3d(320deg) translate(30px);
+}
+.box11 {
+  width: 100px;
+}
+@media all and (min-width: 768px) {
+  .box11 {
+    width: 500px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .box11 {
+    width: 900px;
+  }
+}
+.box12 {
+  width: 14px;
+}
+.box-3 {
+  width: 103px;
+}
+.box-2 {
+  width: 102px;
+}
+.box-1 {
+  width: 101px;
+}
+.box-0 {
+  width: 100px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=01-grammar.css.map */

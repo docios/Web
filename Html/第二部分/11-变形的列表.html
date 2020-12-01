@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul {
+      list-style: none;
+      width: 250px;
+      margin: 60px auto;
+    }
+    
+    li {
+      height: 120px;
+      border: solid 1px red;
+      
+    }
+    
+    .box1 {
+      float: left;
+      width: 120px;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+
+    }
+    
+    .box1 img {
+      height: 100%;
+      width: 100%;
+    }
+    
+    .box1 .box1_box {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      
+      width: 100px;
+      height:100px ;
+      border: 1px solid #bfa;
+      opacity: .5;
+      background: #fff;
+     transform-origin: 0 0;
+      transform: translate(-30px,-30px)   rotate(-90deg);
+      transition: 1.2s;
+    }
+    
+    .box1 .box1_text {
+      position: absolute;
+      text-align: center;
+      color: #bfa;
+      bottom: 10px;
+      width: 100%;
+      transform-origin: 0 0;
+      transform: translate(-100px,-30px) ;
+      transition: 1.2s;
+      
+    }
+    
+    
+    .box2 {
+      float: left;
+      border: solid 1px #bfa;
+      width: 120px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    ul li:hover .box1_box{
+      transform: translate(0, 0)    rotate(0);
+    
+    }
+
+    ul li:hover .box1_text{
+      transform: translate(0, 0)   ;
+  
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li>
+    
+    <div class="box1">
+      <img src="../img/img.png" alt="">
+      <div class="box1_box"></div>
+      <div class="box1_text">默默上市</div>
+    </div>
+    <div class="box2">
+      <p>我是一个段落 </p>
+    </div>
+  </li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+</body>
+</html>

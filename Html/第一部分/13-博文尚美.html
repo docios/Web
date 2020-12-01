@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+      ul {
+          list-style: none;
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      .iwidth {
+          width: 1080px;
+          margin: 0 auto;
+      }
+
+      .iwidth .logo {
+          float: left;
+      }
+
+      .iwidth .logo a {
+          background: url("../img/logo.png") no-repeat center 0;
+          float: left;
+          height: 80px;
+          width: 170px;
+      }
+
+      .iwidth .nav-site {
+          float: right;
+      }
+
+      .iwidth .nav-site li {
+          float: left;
+          height: 80px;
+          line-height: 80px;
+          width: 100px;
+      }
+
+      .nav-site li a {
+          float: right;
+          font-size: 16px;
+      }
+
+
+      .iwidth .nav-site li a:hover {
+          color: #66c5b4;
+
+      }
+
+      .iwidth .nav-site li a {
+          color: #000;
+          font-size: 16px;
+      }
+
+
+      .iwidth .nav-site li .ahov {
+          color: #66c5b4;
+      }
+
+
+      .clear {
+          content: "";
+          display: block;
+          clear: both;
+      }
+
+      /**
+       *  设置banner
+       */
+      .banner {
+          height: 500px;
+          width: 1440px;
+          margin: 0 80px 80px;
+          position: relative;
+          overflow: hidden;
+      }
+
+      /*.banner .slides:nth-of-type(1)  {*/
+      /*   background:url('../img/banner_0.jpg') no-repeat center 0 ;*/
+      /*}*/
+
+      .banner .slides {
+          position: absolute;
+      }
+
+      .banner .slides li {
+          float: left;
+          height: 500px;
+          width: 1440px;
+      }
+
+      .banner .banner_circle_point {
+          position: absolute;
+          width: 100%;
+          bottom: 19px;
+          text-align: center;
+      }
+
+
+      .banner .banner_circle_point li {
+          width: 12px;
+          height: 12px;
+          border: 2px solid white;
+          border-radius: 50%;
+          box-sizing: border-box;
+          margin: 0 6px;
+          cursor: pointer;
+          display: inline-block;
+      }
+
+
+      .banner .banner_circle_point li:hover {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #fff;
+      }
+
+      .banner .banner_circle_point .banner_first_point {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #fff;
+      }
+
+      /**
+       *服务
+       */
+      .iservice {
+          height: 428px;
+          margin: 0 auto;
+      }
+
+      .iservice .itit {
+          background: url(../img/titbg.jpg) no-repeat center 0;
+          margin: 0 auto;
+          text-align: center
+      }
+
+      .iservice .itit h2 {
+          line-height: 30px;
+          height: 30px;
+
+      }
+
+      .servicelist {
+          margin: 33px 0 0;
+          overflow: hidden
+      }
+
+      .servicelist li {
+          width: 250px;
+          margin: 0 10px;
+          float: left;
+          text-align: center;
+          border-bottom: 4px solid #fff;
+          padding-bottom: 25px;
+      }
+      .servicelist li .serico {
+          height: 120px;
+          background: url(../img/web1.png) no-repeat center 0;
+      }
+  </style>
+
+</head>
+<body>
+<div id="head">
+  <div class="iwidth">
+    <ul class="nav-site">
+      <li>
+        <a href="" class="ahov">首页</a>
+      </li>
+      <li>
+        <a href=""><span>关于我们</span> </a>
+      </li>
+      <li>
+        <a href=""><span>客户案列</span> </a>
+      </li>
+      <li>
+        <a href=""><span>服务项目</span> </a>
+      </li>
+      <li>
+        <a href=""><span>新闻资讯</span> </a>
+      </li>
+      <li>
+        <a href=""><span>联系我们</span> </a>
+      </li>
+
+    </ul>
+
+    <div class="logo">
+      <a href="#" title="厦门博文尚美文化传媒有限公司"></a>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner">
+
+  <ul class="slides">
+    <li style="  background:url('../img/banner_0.jpg') no-repeat center 0">
+      <a href="" title="手机网站制作"></a>
+
+    </li>
+    <li style="  background:url('../img/banner_0.jpg') no-repeat center 0">
+      <a href="" title="手机网站制作"></a>
+
+    </li>
+    <li style="  background:url('../img/banner_0.jpg') no-repeat center 0">
+      <a href="" title="手机网站制作"></a>
+
+    </li>
+    <li style="  background:url('../img/banner_0.jpg') no-repeat center 0">
+      <a href="" title="手机网站制作"></a>
+
+    </li>
+  </ul>
+  <ul class="banner_circle_point">
+    <li class="banner_first_point"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+
+</div>
+
+<div class="iservice iwidth">
+  <div class="itit itit2">
+    <h2>服务范围</h2>
+    <span>OUR SERVICES</span>
+  </div>
+  <ul class="servicelist">
+    <li>
+      <div class="s1 serico"></div>
+      <h3>1.WEB DESIGN</h3>
+      <p>企业品牌网站设计 / 手机网站制作<br/>动画网站创意设计</p></li>
+    <li>
+      <div class="s2 serico"></div>
+      <h3>2.GRAPHIC DESIGN</h3>
+      <p>标志LOGO设计 / 产品宣传册设计<br/>企业广告 / 海报设计</p></li>
+    <li>
+      <div class="s3 serico"></div>
+      <h3>3.E-BUSINESS PLAN</h3>
+      <p>淘宝 / 天猫装修设计及运营推广<br/>企业微博 / 微信营销</p></li>
+    <li>
+      <div class="s4 serico"></div>
+      <h3>4.MAILBOX AGENTS</h3>
+      <p>腾讯 / 网易企业邮箱品牌代理<br/>个性化邮箱定制开发</p></li>
+  </ul>
+
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+
+  </ul>
+</div>
+</body>
+</html>

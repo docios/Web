@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Title</title>
+  <style type="text/css">
+    #box1 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      align-items: center;
+    }
+    
+    #box1 div {
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 20px;
+      grid-area: 2/2/3/3;
+    }
+    
+    #box2 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      align-items: center;
+    }
+    
+    #box2 div {
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 20px;
+    }
+    
+    #box2 div:last-child {
+      grid-area: 3/3/4/4;
+    }
+    
+    #box3 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      align-items: center;
+    }
+    
+    #box3 div {
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 20px;
+    }
+    
+    #box3 div:nth-child(2) {
+      
+      grid-area: 2/2/3/3;
+    }
+    
+    #box3 div:last-child {
+      
+      grid-area: 3/3/4/4;
+    }
+    
+    #box4,#box5,#box6 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-template:
+      "a1 a2 a3" 1fr
+      "a4 a5 a6"  1fr
+      "a7 a8 a9" 1fr/1fr 1fr 1fr;
+    }
+    
+    #box4 div,#box5 div ,#box6 div {
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 20px;
+    }
+    
+    #box4 div:nth-child(2) {
+      
+      grid-area:a3;
+    }
+
+    #box4 div:nth-child(3) {
+  
+      grid-area:a7;
+    }
+    #box4 div:nth-child(4) {
+  
+      grid-area:a9;
+    }
+   
+    #box5 div:nth-child(2) {
+  
+      grid-area:a3;
+    }
+
+    #box5 div:nth-child(3) {
+  
+      grid-area:a7;
+    }
+    #box5 div:nth-child(4) {
+  
+      grid-area:a9;
+    }
+    #box5 div:nth-child(5) {
+  
+      grid-area:a5;
+    }
+
+
+    #box6 div:nth-child(2) {
+  
+      grid-area:a3;
+    }
+
+    #box6 div:nth-child(3) {
+  
+      grid-area:a7;
+    }
+    #box6 div:nth-child(4) {
+  
+      grid-area:a9;
+    }
+    #box6 div:nth-child(5) {
+  
+      grid-area:a4;
+    }
+    #box6 div:nth-child(6) {
+  
+      grid-area:a6;
+    }
+  </style>
+</head>
+<body>
+<div id="box1">
+  <div></div>
+</div>
+<div id="box2">
+  <div></div>
+  <div></div>
+</div>
+
+
+<div id="box3">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="box4">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="box5">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="box6">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+</body>
+</html>

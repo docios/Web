@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul {
+      list-style: none;
+      width: 200px;
+      height: 20px;
+      margin: 60px auto;
+    }
+    
+    li {
+      width: 20px;
+      height: 100%;
+      float: left;
+      margin: 6px;
+      
+    }
+    
+    ul li div {
+      animation: candyMove 3s infinite linear;
+    }
+    
+    #candy li div {
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background: #bfa;
+    }
+    
+    @keyframes candyMove {
+      0% {
+        transform: scale(1);
+      }
+      
+      25% {
+        transform: scale(1.5);
+      }
+      50% {
+        transform: scale(2);
+      }
+      75% {
+        transform: scale(2.5);
+      }
+      100% {
+        transform: scale(3);
+      }
+      
+    }
+    
+    ul li:nth-child(1) div {
+      animation-delay: 0s;
+    }
+    
+    ul li:nth-child(2) div {
+      animation-delay: 0.3s;
+    }
+    
+    ul li:nth-child(3) div {
+      animation-delay: 0.6s;
+    }
+    
+    ul li:nth-child(4) div {
+      animation-delay: 0.9s;
+    }
+    
+    ul li:nth-child(5) div {
+      animation-delay: 1.2s;
+    }
+  </style>
+
+</head>
+<body>
+
+<ul id="candy">
+  
+  <li>
+    <div>
+    
+    </div>
+  </li>
+  
+  <li>
+    <div>
+    
+    </div>
+  </li>
+  
+  <li>
+    <div>
+    
+    </div>
+  </li>
+  
+  <li>
+    <div>
+    
+    </div>
+  </li>
+  
+  <li>
+    <div>
+    
+    </div>
+  </li>
+</ul>
+
+
+<img src="../img/address.png" alt="" class="animate__animated  animate__flip animate__infinite infinite">
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "id": "1758720",
+  "name": "andorid",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "392209",
+      "name": "箱子",
+      "font_class": "1",
+      "unicode": "e6d0",
+      "unicode_decimal": 59088
+    },
+    {
+      "icon_id": "1013076",
+      "name": "人",
+      "font_class": "wo",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "3714623",
+      "name": "车",
+      "font_class": "che",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

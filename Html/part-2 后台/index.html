@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
+  <style type="text/css">
+    #main_project {
+      margin-left: 22px;
+      margin-top: 21px;
+      margin-bottom: 10px;
+    }
+    
+    .project_left {
+    
+    }
+    
+    .project_left h2 {
+      height: 24px;
+      color: #333;
+      line-height: 24px;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    
+    .project_left h2 i {
+      font-size: 22px;
+      margin-left: 22px;
+      color: #ccc;
+    }
+    
+    .project_left p {
+      font-size: 13px;
+      line-height: 30px;
+      color: #323232;
+      margin-bottom: 8px;
+    }
+    
+    .project_left span {
+      font-size: 13px;
+      line-height: 30px;
+      color: #a1a1a1;
+    }
+    
+    .project_right {
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+    
+    .project_right img {
+      width: 200px;
+      height: 152px;
+    }
+    
+    #main_list .main_list_btn {
+      height: 57px;
+      border-top: 1px #e1ebec solid;
+      border-bottom: 1px #dee6e9 solid;
+      background: #f1f9fc;
+    }
+    
+    .main_list_btn ul {
+      margin-top: 18px;
+      margin-left: 21px;
+    }
+    
+    .main_list_btn ul li {
+      width: 108px;
+      height: 38px;
+      border: 1px solid #dde7e9;
+      float: left;
+      margin-right: 20px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 38px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    
+    .main_list_btn .active {
+      color: white;
+      background: #018ffb;
+      position: relative;
+    }
+    
+    .main_list_btn .active:after {
+      content: "";
+      background: url("./images/arrow.jpg");
+      display: block;
+      width: 25px;
+      height: 12px;
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      margin-left: -12px;
+    }
+    
+    
+    .main_list_content > div {
+      display: none;
+    }
+    
+    .main_list_content .context_active {
+      display: block;
+    }
+    
+    .context_active {
+      margin: 20px;
+    }
+    
+    .context_active .singload label input {
+      display: none;
+    }
+    
+    .context_active .singload {
+      color: white;
+      background: #5bd25e;
+      width: 110px;
+      height: 34px;
+      margin-right: 20px;
+      font-size: 15px;
+      line-height: 34px;
+      text-align: center;
+      border-radius: 6px;
+    }
+    
+    .context_active .multipleload label input {
+      display: none;
+    }
+    
+    .context_active .multipleload {
+      color: white;
+      background: #35c1da;
+      width: 110px;
+      height: 34px;
+      font-size: 15px;
+      line-height: 34px;
+      text-align: center;
+      border-radius: 6px;
+    }
+    
+    .search {
+      width: 210px;
+      height: 30px;
+      border: 1px solid #dae8e8;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .search label input {
+      outline: none;
+      font-size: 14px;
+      width: 173px;
+      height: 100%;
+      border: none;
+      text-indent: 9px;
+      position: relative;
+      top: -3px;
+    }
+    
+    .search label button {
+      width: 32px;
+      height: 32px;
+      border: none;
+      outline: none;
+      border-left: 1px #e1e6e9 solid;
+      background-image: linear-gradient(#fcfdfd, #f1f9fc);
+    }
+    
+    .search label button i {
+      font-size: 18px;
+      color: #a4c8d6;
+    }
+    
+    #manager_table {
+      clear: both;
+      width: 100%;
+      position: relative;
+      top: 20px;
+      border: 1px #def7e9 solid;
+      border-collapse: collapse;
+    }
+    
+    #manager_table thead {
+      background: #f1f9fc;
+    }
+    
+    #manager_table thead tr {
+      font-size: 12px;
+      height: 32px;
+      
+      border-bottom: 1px #def7e9 solid;
+    }
+    
+    #manager_table thead tr th {
+      border-left: 1px #ecedef solid;
+      height: 100%;
+      line-height: 32px;
+      text-align: left;
+      text-indent: 11px;
+    }
+    
+    #manager_table thead tr th:first-child {
+      
+      text-align: center;
+      text-indent: 0;
+    }
+    
+    #manager_table tbody tr:hover {
+      background: #f1f9fc;
+    }
+    
+    #manager_table tbody tr td {
+      border-left: 1px #def7e9 solid;
+      border-bottom: 1px #def7e9 solid;
+      height: 100%;
+      line-height: 32px;
+      text-align: left;
+      text-indent: 11px;
+    }
+    
+    
+    #manager_table .iconshezhi {
+      font-size: 15px;
+      margin-right: 13px;
+      color: #0077d1;
+    }
+    
+    #manager_table .iconsvg34-copy {
+      font-size: 15px;
+      color: #44a2ec;
+    }
+    
+    #manager_table .iconchuyidong1-copy {
+      font-size: 15px;
+      color: #db413f;
+    }
+    
+    #manager_table tbody tr td:first-child {
+      text-align: center;
+      text-indent: 0;
+    }
+    
+    .manager_footer {
+      margin-top: 20px;
+      border: 1px #def7e9 solid;
+      border-top: none;
+      height: 70px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    
+    .manager_footer .manager_footer_delete {
+      margin-top: 22px;
+      margin-left: 17px;
+      margin-bottom: 21px;
+    }
+    
+    .manager_footer .manager_footer_delete, .manager_footer_upload {
+      width: 78px;
+      outline: none;
+      border: 1px solid #c9e3f2;
+      font-size: 12px;
+      background-image: linear-gradient(#f7fcfe, #e7f4fa);
+      border-radius: 5px;
+      color: #308abe;
+      height: 24px;
+      line-height: 24px;
+      margin-right: 15px;
+    }
+    
+    .manager_footer_page {
+      margin-right: 17px;
+      margin-top: 22px;
+      font-size: 0;
+      line-height: 24px;
+    }
+    
+    .manager_footer_page a {
+      border: 1px solid #e6e6e6;
+      
+      padding: 6px 9px;
+      color: #323232;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    
+    .manager_footer_page .page_active {
+      background: #40adff;
+      border: 1px solid #3396e7;
+      color: white;
+    }
+  
+  </style>
+</head>
+<body>
+<header id="header">
+  <hgroup>
+    <h1 class="header_h1 l">
+      <img src="./images/logo.png" alt="">
+    </h1>
+    <h2 class="header_h2 l">正达建筑内部管理平台</h2>
+  </hgroup>
+  <ul class="header_ul  r">
+    <li>
+      <i class="iconfont  iconwode"></i> 欢迎您，武剑 管理员
+    </li>
+    <li>
+      <i class="iconfont  iconcmstubiaozitihua14"></i> <a href="#">修改密码</a>
+    </li>
+    <li>
+      <i class="iconfont  iconziyuan"></i> <a href="#">公司官网</a>
+    </li>
+    <li>
+      <i class="iconfont  iconfenxiang"></i> <a href="#">退出</a>
+    </li>
+  </ul>
+
+</header>
+
+<aside id="menu" class="l">
+  <ul>
+    <li class="menu_hover">
+      <a href="#">
+        <i class="iconfont iconziyuan"></i>
+        <p>项目管理</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="iconfont icondianhuabu"></i>
+        <p>用户管理</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="iconfont iconshezhi"></i>
+        <p>系统设置</p>
+      </a>
+    </li>
+  </ul>
+
+
+</aside>
+<main id="main">
+  
+  <section class="main_container">
+    <section id="main_project" class="clear">
+      <div class="project_left l">
+        <h2>青田高湾绿园一期、二期工 <i class="iconfont iconbianji"></i></h2>
+        <p>
+          项目编号：<span>CN0000507</span>
+          <br>
+          项目类型：<span>在建工程</span>
+          <br>
+          项目负责人：<span>梅海丽</span>
+          <br>
+          手机号码：<span>15869168967</span>
+        </p>
+      
+      
+      </div>
+      
+      <div class="project_right r">
+        <img src="./images/project_logo.jpg" alt="">
+      </div>
+    </section>
+    <section id="main_list">
+      <div class="main_list_btn">
+        <ul>
+          <li>视频监控</li>
+          <li>考勤管理</li>
+          <li>安全巡查</li>
+          <li class="active">资料管理</li>
+        </ul>
+      
+      </div>
+      <div class="main_list_content">
+        <div>视频监控</div>
+        <div>考勤管理</div>
+        <div>安全巡查</div>
+        <div class="context_active">
+          
+          <div class="singload l">
+            <label>
+              <input type="file">
+              
+              <i class="iconfont iconshangchuan"></i> 单个上传
+            
+            </label>
+          </div>
+          <div class="multipleload l">
+            <label>
+              <input type="file" multiple>
+              
+              <i class="iconfont iconshangchuan1"></i> 批量上传
+            
+            </label>
+          </div>
+          <div class="search r">
+            <label>
+              <input type="text" placeholder="请输入关键字">
+              <button>
+                <i class="iconfont iconsousuo"></i>
+              </button>
+            
+            </label>
+          </div>
+          
+          <table id="manager_table">
+            <thead>
+            <tr>
+              <th width="49"><input type="checkbox"></th>
+              <th>文档名称</th>
+              <th width="167">文档大小</th>
+              <th width="148">上传者</th>
+              <th width="168">上传时间</th>
+              <th width="81">操作</th>
+            </tr>
+            
+            </thead>
+            
+            <tbody>
+            
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><i class="iconfont iconshezhi"></i>安全专项方案.doc</td>
+              <td>21.3KB</td>
+              <td>陈文耀</td>
+              <td>2016-03-14</td>
+              <td><i class="iconfont iconsvg34-copy"></i>&nbsp;&nbsp;&nbsp;<i class="iconfont iconchuyidong1-copy"></i>
+              </td>
+            </tr>
+            </tbody>
+          
+          </table>
+          <div class="manager_footer">
+            
+            <button class="manager_footer_delete">批量删除</button>
+            <button class="manager_footer_upload">批量下载</button>
+            
+            <div class="manager_footer_page r">
+              <a href="#">共12条</a>
+              <a href="#">首页</a>
+              <a href="#">上一页</a>
+              <a href="#" class="page_active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">下一页</a>
+              <a href="#">尾页</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer id="footer">
+  Copyright © 2009 -2016 丽水市正达建筑工程有限公司 All rights reserved. 技术支持：红点智能
+</footer>
+</body>
+</html>

@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <script type="text/javascript" src="../../mudule/MyModule.js"></script>
+  <script type="text/javascript" src="../../mudule/MyModule2.js"></script>
   <script type="text/javascript">
     /**
      * 闭包
      *     嵌套的内部函数
      *     包含被引用变量的对象
      * 条件
-     *    函数嵌套
+     *    函数嵌
      *    内部函数引用外部函数的变量/函数
      * 常见闭包
      *    内部函数作为外部函数的返回值
@@ -21,10 +23,17 @@
       function fn2() {
         console.log(a)
       }
-      console.log(“难为死我啦Git”)
+      console.log("难为死我啦Git")
     }
 
     fn1()
+
+   var myModule= MyModule();
+    myModule.pursh()
+    myModule.sale()
+    module2.pursh()
+    module2.sale()
+
   </script>
 </head>
 <body>

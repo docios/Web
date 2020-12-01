@@ -1,11 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f296e5ec-a589-4920-97a1-9c3f37fa2f0f" name="Default Changelist" comment="" />
+    <list default="true" id="f296e5ec-a589-4920-97a1-9c3f37fa2f0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Html/common/ant.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/common/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/icon/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/3xa68qio3fy337gjjpjq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/address.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/assets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/casecur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/equip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/transition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/img/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/js/jquery.flexslider-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/iconfont/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/iconfont/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/iconfont/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/iconfont/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/iconfont/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/iconfont/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/images/arrow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/images/project_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part-2 后台/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/01-css新特性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/02-shape.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/03-滚动条.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/04-自定义时钟.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/css/01-grammar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/css/01-grammar.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/css/reset.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-1/01-grammar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-1/01-grammar.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-1/01-grammar.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-1/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-1/reset.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-1/reset.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-2/01-grammar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/part-2/reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/postcssStudy/dist/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/part4/postcssStudy/src/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第一部分/09-定位实现下拉菜单.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第一部分/12-博文尚美1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第一部分/13-博文尚美.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/01-flex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/02-flex 作用在子项上.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/03-骰子页面.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/04-grid网格布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/05-grid 在子项.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/06-grid骰子布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/07-动画骰子.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/08-.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/08-百度搜索风云榜.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/09-动态设置fontsize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/10-响应式布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/11-bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/css/base1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第三部分/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/01-基础.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/02-map与area.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/03-文字注解与文字方法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/04-link扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/05-新语义化标签.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/06-表格的其他样式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/07-表单扩展美化.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/08-BFC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/09-transition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/10-transform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/11-变形的列表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/12-动画.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/13-图片的移入移出.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/14-动画loading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/15-动画loading-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/16-3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/17-3d-立方体.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/18-旋转木马.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/19-图片旋转.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/20-翻书效果.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/21-翻书效果-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/22-渐变.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/23-渐变进度条.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/24-渐变-一道光.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/25-字体图标.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/26-模糊与四则运算.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/27-Ie低版本常见bug.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/28-双飞翼布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Html/第二部分/29-圣杯布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/04-高级/02-函数高级/13-面试题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/04-高级/03-对象高级/01-对象创建方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/04-高级/03-对象高级/02-继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/04-高级/03-对象高级/03-call 假继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/04-高级/03-对象高级/04-组合继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/mudule/MyModule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/mudule/MyModule2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/第一部分/09-position.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/第一部分/09-position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/第一部分/11-博文尚美.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/第一部分/11-博文尚美.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/02-对象/01-基础.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/02-对象/01-基础.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/03-DOM/14-轮播图.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/03-DOM/14-轮播图.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/04-高级/02-函数高级/12-闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/04-高级/02-函数高级/12-闭包.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML4 File" />
+        <option value="CSS File" />
+        <option value="Less File" />
+        <option value="SCSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,9 +159,59 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/JS" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/postcss.cmd" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\Web\Html\第三部分\css" />
+      <recent name="E:\github\Web\Html\part-2 后台\images" />
+      <recent name="E:\github\Web\Html\img" />
+      <recent name="E:\github\Web\Html\part-2 后台\iconfont" />
+      <recent name="E:\github\Web\Html\iconfont" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github\Web\Html\part4" />
+      <recent name="E:\github\Web\Html\part-2 后台\images" />
+      <recent name="E:\github\Web\Html\part-2 后台\css" />
+      <recent name="E:\github\Web\Html\part-2 后台" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.18-旋转木马.html">
+    <configuration name="02-map与area.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/Html/第二部分/02-map与area.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="04-css边框.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/Html/第一部分/04-css边框.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="06-表格的其他样式.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/Html/第二部分/06-表格的其他样式.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="09-定位实现下拉菜单.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/Web/Html/第一部分/09-定位实现下拉菜单.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="10-transform.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/Html/第二部分/10-transform.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="18-旋转木马.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/Html/第二部分/18-旋转木马.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.18-旋转木马.html" />
+        <item itemvalue="JavaScript Debug.10-transform.html" />
+        <item itemvalue="JavaScript Debug.06-表格的其他样式.html" />
+        <item itemvalue="JavaScript Debug.04-css边框.html" />
+        <item itemvalue="JavaScript Debug.02-map与area.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -29,16 +222,143 @@
       <option name="presentableId" value="Default" />
       <updated>1604400571954</updated>
       <workItem from="1604400573601" duration="48000" />
+      <workItem from="1605226964597" duration="2742000" />
+      <workItem from="1605231653914" duration="150000" />
+      <workItem from="1605231815120" duration="220000" />
+      <workItem from="1605232050190" duration="265000" />
+      <workItem from="1605232431963" duration="97000" />
+      <workItem from="1605232652403" duration="44000" />
+      <workItem from="1605318325145" duration="1514000" />
+      <workItem from="1605320662845" duration="74000" />
+      <workItem from="1605323401357" duration="895000" />
+      <workItem from="1605325066129" duration="20994000" />
+      <workItem from="1605578121318" duration="12978000" />
+      <workItem from="1605601849994" duration="10774000" />
+      <workItem from="1605662826111" duration="16055000" />
+      <workItem from="1605764627095" duration="12058000" />
+      <workItem from="1605838552418" duration="6447000" />
+      <workItem from="1606094367197" duration="23110000" />
+      <workItem from="1606184292139" duration="21830000" />
+      <workItem from="1606266592041" duration="26007000" />
+      <workItem from="1606353510255" duration="276000" />
+      <workItem from="1606354539286" duration="28714000" />
+      <workItem from="1606446786617" duration="6502000" />
+      <workItem from="1606458148194" duration="1234000" />
+      <workItem from="1606459449769" duration="7926000" />
+      <workItem from="1606470221467" duration="150000" />
+      <workItem from="1606530416668" duration="3602000" />
+      <workItem from="1606698750284" duration="25455000" />
+      <workItem from="1606784962473" duration="6723000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604400620646">
+    <state x="2610" y="472" key="#Custom_Plugin_Repositories" timestamp="1606552900057">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="2610" y="472" key="#Custom_Plugin_Repositories/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606552900057" />
+    <state x="2605" y="401" width="562" height="334" key="#File_Watchers" timestamp="1606552626605">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="2605" y="401" width="562" height="334" key="#File_Watchers/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606552626605" />
+    <state x="2482" y="290" key="#HTTP_Proxy" timestamp="1606552905051">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="2482" y="290" key="#HTTP_Proxy/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606552905051" />
+    <state x="2454" y="390" key="#Notifications" timestamp="1606552655613">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="2454" y="390" key="#Notifications/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606552655613" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605679253034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1604400620646" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1605679253034" />
+    <state x="2459" y="358" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606466386092">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="2459" y="358" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606466386092" />
+    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606284413542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606284413542" />
+    <state x="723" y="348" key="#com.intellij.tools.ToolEditorDialog" timestamp="1606729164840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="723" y="348" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606729164840" />
+    <state x="2086" y="241" width="691" height="721" key="EditFileWatcherDialog" timestamp="1606701166041">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="2086" y="241" width="691" height="721" key="EditFileWatcherDialog/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606701166041" />
+    <state x="2725" y="378" key="FileChooserDialogImpl" timestamp="1606791574704">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606727953768" />
+    <state x="2725" y="378" key="FileChooserDialogImpl/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606791574704" />
+    <state width="1898" height="262" key="GridCell.Tab.0.bottom" timestamp="1606747080288">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state width="1898" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606741107072" />
+    <state width="1898" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606747080288" />
+    <state width="1898" height="262" key="GridCell.Tab.0.center" timestamp="1606747080288">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state width="1898" height="262" key="GridCell.Tab.0.center/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606741107072" />
+    <state width="1898" height="262" key="GridCell.Tab.0.center/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606747080288" />
+    <state width="1898" height="262" key="GridCell.Tab.0.left" timestamp="1606747080287">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state width="1898" height="262" key="GridCell.Tab.0.left/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606741107071" />
+    <state width="1898" height="262" key="GridCell.Tab.0.left/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606747080287" />
+    <state width="1898" height="262" key="GridCell.Tab.0.right" timestamp="1606747080288">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state width="1898" height="262" key="GridCell.Tab.0.right/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606741107072" />
+    <state width="1898" height="262" key="GridCell.Tab.0.right/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606747080288" />
+    <state x="2038" y="205" width="1346" height="738" key="SettingsEditor" timestamp="1606791750443">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606729165847" />
+    <state x="2038" y="205" width="1346" height="738" key="SettingsEditor/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606791750443" />
+    <state x="1935" y="118" width="1601" height="989" key="dock-window-1" timestamp="1606206862534">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="1935" y="118" width="1601" height="989" key="dock-window-1/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606206862534" />
+    <state x="1923" y="118" width="1596" height="989" key="dock-window-2" timestamp="1605494910802">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="1923" y="118" width="1596" height="989" key="dock-window-2/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1605494910802" />
+    <state x="1782" y="167" width="1596" height="910" maximized="true" key="dock-window-3" timestamp="1605494910802">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="1782" y="167" width="1596" height="910" maximized="true" key="dock-window-3/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1605494910802" />
+    <state x="1920" y="118" width="1596" height="989" key="dock-window-4" timestamp="1605497705000">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="1920" y="118" width="1596" height="989" key="dock-window-4/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1605497705000" />
+    <state x="2433" y="321" key="run.anything.popup" timestamp="1606701965318">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1605771313377" />
+    <state x="2433" y="321" key="run.anything.popup/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606701965318" />
+    <state x="2439" y="313" width="672" height="587" key="search.everywhere.popup" timestamp="1606715880893">
+      <screen x="1920" y="118" width="1600" height="900" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.118.1600.900@0.0.1920.1040" timestamp="1606293752049" />
+    <state x="2439" y="313" width="672" height="587" key="search.everywhere.popup/0.0.1920.1040/1920.118.1600.900@1920.118.1600.900" timestamp="1606715880893" />
   </component>
 </project>

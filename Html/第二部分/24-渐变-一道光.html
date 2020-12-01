@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #light {
+      width: 1400px;
+      height: 500px;
+      margin: 40px auto;
+      position: relative;
+      /*background: url("../img/banner_0.jpg");*/
+      
+    }
+    
+    
+    img {
+      width: 1400px;
+      height: 500px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    .move {
+      width: 1400px;
+      height: 500px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #fff;
+      background: transparent;
+      
+    }
+    
+    .move:hover {
+      background-image: linear-gradient(to top , #999 25%, #080 25%, #080 50%, #999 50%, #999 75%, #080 75%);
+      background-size: 40px;
+      animation: movelight 2s infinite linear;
+      background-repeat: repeat-y;
+    }
+    
+    
+    @keyframes movelight {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 1400px 500px;
+      }
+    }
+  
+  </style>
+</head>
+<body>
+<div id="light">
+  <img src="../img/banner_0.jpg" alt="">
+  <div class="move"></div>
+</div>
+
+</body>
+</html>
